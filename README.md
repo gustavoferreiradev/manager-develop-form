@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <img alt="Portfolio Web" src=".github/preview.png" width="100%">
+  <img alt="Cadastro de Funcionários" src=".github/preview.png" width="100%">
 </p>
 
 
