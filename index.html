@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./src/assets/style.css" media="screen" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Cadastro de Funcionários</title>
+</head>
+<body>
+    <section class="container">
+    <form id="form">
+         <div class="tipoFuncionario">
+            <label for="gerenteRadio"><input type="radio" name="tipoFuncionarioRadio" value="gerente" onclick="javascript:hiddenLanguageField()" checked/>Gerente</label>
+            <label for="desenvolvedor"><input type="radio" name="tipoFuncionarioRadio" value="desenvolvedor" onclick="javascript:showLanguageField()"/>Desenvolvedor</label>
+         </div>
+         <div class="formGroup">
+            <div class="inputGroup">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" onclick="javascript:clearErrorInInputFields(id)" />
+              </div>
+              <div class="inputGroup">
+                <label for="idade">Idade</label>      
+                <input type="number" name="idade" id="idade" onclick="javascript:clearErrorInInputFields(id)" /> 
+              </div>
+              <div class="inputGroup">
+                <label for="cargo">Cargo</label>
+                <input type="cargo" name="cargo" id="cargo" onclick="javascript:clearErrorInInputFields(id)" />   
+              </div>
+              <div class="inputGroup">
+                <label for="departamento">Departamento</label>
+                <input type="departamento" name="departamento" id="departamento" onclick="javascript:clearErrorInInputFields(id)"/> 
+              </div>
+              <div class="hiddenElement" id="inputGroupLanguage">
+                <label for="linguagem">Linguagem</label>
+                <input type="linguagem" name="linguagem" id="linguagem" onclick="javascript:clearErrorInInputFields(id)"/>                 
+              </div>   
+         </div>
+         <div class="buttonGroup" id="buttonGroup">
+            <input type="submit" value="Enviar" />
+         </div>
+         <section class="hiddenElement" id="informacoesPreenchidas">
+         <h2>Informações Preenchidas</h2>
+        </section>
+    </form>
+</section>
+<script src="./src/assets/script.js"></script>
+</body>
+</html>

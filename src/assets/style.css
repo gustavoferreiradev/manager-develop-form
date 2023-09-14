@@ -1,0 +1,154 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+
+body > section.container {
+    display: flex;
+    background-color: #191970;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    overflow: hidden;
+    height: 100vh;
+}
+
+body > section.container > form {
+    display: flex;
+    margin: 30px;
+    background-color: #FFF;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50,50,50,0.22);
+    padding: 30px;
+    margin: 20px;
+    width: 400px;
+    height: 800px;
+    overflow: hidden;
+}
+
+body > section.container > form > div.tipoFuncionario {
+    margin-bottom: 0;
+    display: flex;
+    width: 62.5%;
+    justify-content: space-between;
+}
+
+body > section.container > form > div.formGroup {
+    margin-bottom: 1rem;
+}
+
+body > section.container > form > div.formGroup > div.inputGroup {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 1rem 0.2rem;
+}
+
+body > section.container > form > div.formGroup > div.inputGroup#inputGroupLanguage {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 1rem 0.2rem;
+}
+
+body > section.container > form > div.formGroup > div.inputGroup > label {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+body > section.container > form > section.informacoesPreenchidas {
+    margin-top: 1rem;
+}
+
+body > section.container > form > section.informacoesPreenchidas > h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+
+body > section.container > form > section.informacoesPreenchidas > p {
+    line-height: 1.5rem;
+}
+
+body > section.container > form > section.informacoesPreenchidas > p > strong {
+    font-weight: 700;
+}
+
+.hiddenElement {
+    display: none;
+}
+
+.borderInputError {
+    border-color: #ff0000;
+}
+
+.labelError {
+    color: #ff0000;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+}
+
+.labelSuccess {
+    color: green;
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+}
